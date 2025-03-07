@@ -1,0 +1,165 @@
+/* Esta fuente (krona one) la puedo borrar porque está contenida en la importación de la siguiente (montserrat=
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+*/
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-primario: #FFEDFA;
+    --color-secundario: #DE3163;
+    --color-terciario: #CCDF92;
+    --color-cuaternario: #E195AB;
+
+    --fuente-monserrat: "Montserrat", sans-serif;
+    --fuente-krona: "Krona One", sans-serif;
+}
+
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    font-size: 1.5rem;
+    box-sizing: border-box;
+}
+
+.header{
+padding: 2% 0% 0% 15%;
+}
+
+.header__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.header__menu__links{
+    font-size: 1.5rem;
+    color:var(--color-secundario);
+    text-decoration: none;
+    font-family: var(--fuente-monserrat);
+    font-weight: 600;
+    }
+
+.header__menu__links:hover{
+    color: var(--color-terciario);
+}
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    padding: 7.5% 15%;
+    justify-content: space-between;
+    gap:82px;
+}
+
+.presentacion__contenido{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentacion__contenido-titulo{
+font-family: var(--fuente-krona);
+color: var(--color-cuaternario);
+font-size: 2.25rem;
+}
+
+.presentacion__contenido-parrafo{
+font-family: var(--fuente-monserrat);
+font-size: 1.5rem;
+}
+
+.presentacion__enlaces {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentacion__enlaces__subtitulo{
+    width: 320px;
+    font-family: var(--fuente-krona);
+    font-size: 1.5rem;
+    font-weight: 400px;
+    text-align: center;
+}
+
+.presentacion__enlaces__btn{
+    width: 50%;
+    text-align: center;
+    padding: 16px 0px;
+    font-family: var(--fuente-monserrat);
+    font-weight: 600;
+    color:var(--color-cuaternario);
+    font-size: 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 2px solid var(--color-cuaternario);
+    display:flex;
+    justify-content:center;
+    gap: 16px;
+}
+
+.presentacion__enlaces__btn:hover{
+    background-color: var(--color-secundario);
+    color: var(--color-terciario);
+    width: 420px;
+}
+
+.presentacion__imagen{
+    width: 50%;
+}
+
+.destacar-titulo{
+    color: var(--color-terciario);
+}
+
+.footer{
+    font-family: var(--fuente-monserrat);
+    font-size: 1.25rem;
+    font-weight: 400;
+    background-color:var(--color-cuaternario);
+    color:var(--color-primario);
+}
+
+.footer__infoContacto{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0% 15% 0% 15%;
+    gap:82px;
+}
+
+@media (max-width: 1250px){
+    .header{
+        padding: 10% 0% 0% 0%;
+    }
+
+    .header__menu{
+        justify-content: center;
+        /*flex-direction: column;
+        align-items: center;*/
+        gap: 40px;
+    }
+   
+    .presentacion{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .presentacion__contenido{
+        width: auto;
+    }
+
+    .footer__infoContacto{
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: flex-start;
+        gap: 15px;
+        padding: 0% 7%;
+    }
+}
